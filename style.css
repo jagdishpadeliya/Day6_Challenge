@@ -1,0 +1,152 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-repeat: no-repeat;
+    background-image: url("./images/bg-pattern-top-desktop.svg"),url("./images/bg-pattern-bottom-desktop.svg");
+}
+.container{
+    border: 1px solid black;
+    width: 80vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10vh;   
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 60vw;
+    align-items: center;
+}
+.details h2{
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--Very-Dark-Magenta);
+}
+.first{
+    width: 300px;
+}
+.second {
+    margin-left: 10vw;
+}
+.second div{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.second .sec-sec{
+    margin-left: 30px;
+}
+.second .sec-thrd{
+    margin-left: 50px;
+}
+.second div img{
+    margin-right: 0.6rem;
+}
+.first h2{
+    word-spacing: 1.5rem;
+}
+.review{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 60vw;
+}
+.review div div{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.review div{
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--White);
+    width: 20vw;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 14px;
+}
+.review div img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.review div p{
+    margin: 0 20px 20px ;
+    word-spacing: 4px;
+}
+.review div div li{
+    line-height: 1.5rem;
+}
+.review div div span{
+    color: var(--Soft-Pink);
+}
+li{
+    list-style-type: none;
+}
+.colton{
+    height: 200px;
+    margin-right: 20px;
+}
+.irene{
+    margin-top: 20px;
+    height: 200px;
+    margin-right: 20px;
+
+}
+.anne{
+    margin-top: 40px;
+    height: 200px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width:425px)
+{
+    .details{
+        flex-direction: column;
+    }
+    .first{
+        margin-left: 50px;
+    }
+    .second{
+        margin-left: 0;
+    }
+    .second .sec-sec{
+        margin-left: 0;
+    }
+    .second .sec-thrd{
+        margin-left: 0;
+    }
+    .review{ 
+        flex-direction: column;
+    }
+    .review div{
+        width: 100%;
+    }
+    .second div{
+        display: block;
+    }
+    .second img{
+        width: 20px;
+        height: 20px;
+    }
+}
